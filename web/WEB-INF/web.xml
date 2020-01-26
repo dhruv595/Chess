@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>PlayerServlet</servlet-name>
+        <servlet-class>servlet.PlayerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChessServlet</servlet-name>
+        <servlet-class>servlet.ChessServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PictureServlet</servlet-name>
+        <servlet-class>servlet.PictureServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChallengeServlet</servlet-name>
+        <servlet-class>servlet.ChallengeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PlayerServlet</servlet-name>
+        <url-pattern>/PlayerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChessServlet</servlet-name>
+        <url-pattern>/ChessServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PictureServlet</servlet-name>
+        <url-pattern>/PictureServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChallengeServlet</servlet-name>
+        <url-pattern>/ChallengeServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+           30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>Login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
